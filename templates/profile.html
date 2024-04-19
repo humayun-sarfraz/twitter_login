@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <p><strong>Username:</strong> {{ user.screen_name }}</p>
+    <p><strong>Name:</strong> {{ user.name }}</p>
+    <p><strong>Description:</strong> {{ user.description }}</p>
+    <p><strong>Location:</strong> {{ user.location }}</p>
+    <p><strong>Followers Count:</strong> {{ user.followers_count }}</p>
+    <p><strong>Following Count:</strong> {{ user.friends_count }}</p>
+    <p><strong>Tweets Count:</strong> {{ user.statuses_count }}</p>
+    <p><strong>Profile Image:</strong> <img src="{{ user.profile_image_url_https }}" alt="Profile Image"></p>
+
+    <pre>{{ user }}</pre>
+</body>
+</html>
