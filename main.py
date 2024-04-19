@@ -3,11 +3,11 @@ import tweepy
 
 # Flask app configuration
 app = Flask(__name__)
-app.secret_key = "Und3YkdQQ0xJN0JCc0FCNS1oYzY6MTpjaQ"  # Replace with a secure secret key
+app.secret_key = "Und3YkdQQ0xJN0JCc0FCNS1oYzY6MTpj1aQ"  # Replace with a secure secret key
 
 # Twitter API credentials
-consumer_key = "sCp27dgYP9HbtpaulCuQreey4"
-consumer_secret = "jx8AGmG0Zr9YLhDgmG385DqRssg1NxKGcpLWtH9I7F6LAOawWF"
+consumer_key = "sCp27dgYP9HbtpaulCuQree3y4"
+consumer_secret = "jx48AGmG0Zr9YLhDgmG385DqRssg1NxKGcpLWtH9I7F6LAOawWF"
 callback_url = "http://127.0.0.1:5000/callback"  # Update with your callback URL
 
 # Authenticate with Twitter API
