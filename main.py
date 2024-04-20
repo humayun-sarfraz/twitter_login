@@ -35,17 +35,14 @@ def callback():
     try:
         auth.get_access_token(verifier)
         api = tweepy.API(auth)
-
         # Retrieve authenticated user's profile data
         user = api.verify_credentials()
-        
         #tweets = api.user_timeline(screen_name=user.screen_name, count=10)  # Adjust count as needed
         #print(tweets)
         return render_template("profile.html", user=user)
     
     except tweepy.TweepyException as e:
         return f"Failed to retrieve profile data: {e}"
-
 
 if __name__ == "__main__":
     app.run(debug=True)
